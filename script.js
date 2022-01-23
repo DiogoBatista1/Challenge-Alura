@@ -19,11 +19,13 @@ Apenas letras minúsculas
 Não permite acentuação     
 */
 
-var caixa1 = document.getElementById("input-text");
+var caixa1 = document.getElementById("input-texto");
 var caixa2 = document.getElementById("msg");
 var btnCripto = document.getElementById("btn-cripto");
 
+btnCripto.addEventListener("click", myFunction);
 
 function myFunction() {
     btnCripto.style.color = "red";
+    caixa2.value = caixa1.value;
   }
