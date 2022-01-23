@@ -18,6 +18,14 @@ Não permite acentuação
 Apenas letras minúsculas
 Não permite acentuação     
 */
+var items = [
+    ["a", "ai"],
+    ["e", "enter"],
+    ["i", "imes"],
+    ["o", "ober"],
+    ["u", "ufat"]
+];
+
 
 var caixa1 = document.getElementById("input-texto");
 var caixa2 = document.getElementById("msg");
@@ -27,5 +35,5 @@ btnCripto.addEventListener("click", myFunction);
 
 function myFunction() {
     btnCripto.style.color = "red";
-    caixa2.value = caixa1.value;
+    caixa2.value = caixa1.value.replace("dio", "Gabriel");
   }
