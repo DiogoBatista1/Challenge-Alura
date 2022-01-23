@@ -18,3 +18,12 @@ Não permite acentuação
 Apenas letras minúsculas
 Não permite acentuação     
 */
+
+var caixa1 = document.getElementById("input-text");
+var caixa2 = document.getElementById("msg");
+var btnCripto = document.getElementById("btn-cripto");
+
+
+function myFunction() {
+    btnCripto.style.color = "red";
+  }
