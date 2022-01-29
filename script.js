@@ -11,6 +11,7 @@ var caixa1 = document.getElementById("input-texto");
 var caixa2 = document.getElementById("msg");
 var btnCripto = document.getElementById("btn-cripto");
 var copybtn = document.getElementById("btn-copy");
+var descriptBtn = document.getElementById("btn-descripto");
 
 criptografar = (text) => {
     btnCripto.style.color = "red";
@@ -48,3 +49,6 @@ btnCripto.addEventListener("click", () => {
   caixa2.value = encriptedText;
 });
 
+descriptBtn.addEventListener("click", () => {
+  caixa2.value = caixa1.value;
+})
